@@ -1,0 +1,48 @@
+﻿2021-12-09 11:50:52.442 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:50:52.722 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 11:54:14.764 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:54:14.943 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 11:58:31.896 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:58:32.185 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:45:34.752 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:45:34.906 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:47:06.747 INFO  Immediate Retry is going to retry message '3b564a89-dd95-4b1b-b1f4-adf900f3a698' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'b3017fa7-3099-bd82-5943-a60912cc14c6' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 3b564a89-dd95-4b1b-b1f4-adf900f3a698
+	Transport message ID: 142cb526-5020-43b2-b6bb-0f0ea332dc90
+2021-12-09 14:49:11.788 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:49:11.979 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:53:15.935 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:53:16.191 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:54:46.522 INFO  Immediate Retry is going to retry message '66b9dbed-b475-4618-a8b3-adf900f5c1ad' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '6a4d8edc-2ff4-25bc-2c62-85f061bbfb3b' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 66b9dbed-b475-4618-a8b3-adf900f5c1ad
+	Transport message ID: 02974250-f581-4d9e-8890-92d9e91a1340
+2021-12-09 14:55:45.441 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:55:45.877 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.

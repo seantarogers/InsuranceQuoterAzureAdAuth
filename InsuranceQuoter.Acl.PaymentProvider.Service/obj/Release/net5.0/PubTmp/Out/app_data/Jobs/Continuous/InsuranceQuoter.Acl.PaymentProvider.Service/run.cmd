@@ -1,0 +1,1 @@
+dotnet InsuranceQuoter.Acl.PaymentProvider.Service.dll %*

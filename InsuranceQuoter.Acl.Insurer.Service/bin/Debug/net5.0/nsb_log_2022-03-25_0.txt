@@ -1,0 +1,3 @@
+﻿2022-03-25 10:14:24.823 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-03-25 10:14:25.075 INFO  Selected active license from C:\Users\srogers\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2022-06-20

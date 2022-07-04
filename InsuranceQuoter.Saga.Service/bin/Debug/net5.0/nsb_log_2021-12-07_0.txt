@@ -1,0 +1,8 @@
+﻿2021-12-07 17:51:51.197 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:51:51.404 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:53:40.342 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:53:40.679 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:55:04.895 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:55:05.033 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:55:42.686 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:55:42.918 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.

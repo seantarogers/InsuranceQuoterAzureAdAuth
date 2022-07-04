@@ -1,0 +1,90 @@
+﻿@page "/quotes"
+@using Microsoft.AspNetCore.Authorization
+@using InsuranceQuoter.Presentation.Ui.Models
+@using InsuranceQuoter.Presentation.Ui.Extensions
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+@attribute [Authorize]
+
+<h1 class="page-title">Insurance Quotes for your Car</h1>
+
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th scope="col">
+            Premium
+            <i @onclick="SortByPremiumAscending" class="bi bi-sort-up pointer"></i>
+            <i @onclick="SortByPremiumDescending" class="bi bi-sort-down pointer"></i>
+        </th>
+        <th scope="col">Premium Tax</th>
+        <th scope="col">
+            Insurer
+            <i @onclick="SortByInsurerAscending" class="bi bi-sort-up pointer"></i>
+            <i @onclick="SortByInsurerDescending" class="bi bi-sort-down pointer"></i>
+        </th>
+        <th scope="col">StartDate</th>
+        <th scope="col">Included Addons</th>
+        <th scope="col">Buy</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (QuoteModel quote in QuoteModel)
+    {
+        <tr class="@quote.SelectedClass">
+            <td>@quote.Premium.ToPounds()</td>
+            <td>@quote.PremiumTax.ToPounds()</td>
+            <td>@quote.Insurer</td>
+            <td>@quote.StartDate</td>
+            <td>@quote.Addons</td>
+
+            <td>
+                <button value="@quote.Uid" class="btn btn-primary btn-sm" type="button" @onclick="() => QuoteSelected(quote.Uid)">Buy Policy</button>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<div class="form-group">
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: @TimerPercentage" role="progressbar" aria-valuenow="@TimerTicks" aria-valuemin="0" aria-valuemax="10"></div>
+    </div>
+</div>
+<div class="form-group">
+    <button class="btn btn-warning" type="button" @onclick="() => QuoteBackSelected()">Back</button>
+</div>
+@if (QuoteHasBeenSelected && ShowPaymentDialog)
+{
+    <div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleLabel">Pay for your policy</h5>
+                    <button type="button" class="close" @onclick="CloseDialogSelected" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <EditForm Model="@PaymentModel" OnValidSubmit="HandleValidSubmit">
+                        <DataAnnotationsValidator/>
+                        <ValidationSummary/>
+
+                        <div class="form-group">
+                            <InputText id="cardNumber" class="form-control" @bind-Value="@PaymentModel.CardNumber" placeholder="Enter Card Number"></InputText>
+                        </div>
+                        <div class="form-check form-group">
+                            <InputCheckbox id="termsAndConditions" class="form-check-input" @bind-Value="@PaymentModel.AgreeToTermsAndConditions"></InputCheckbox>
+                            <label class="form-check-label small" for="termsAndConditions">
+                                Terms and conditions
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Make Payment</button>
+                    </EditForm>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}

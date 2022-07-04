@@ -1,0 +1,241 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Acl.Insurer.Service\\InsuranceQuoter.Acl.Insurer.Service.csproj": {}
+  },
+  "projects": {
+    "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Acl.Insurer.Service\\InsuranceQuoter.Acl.Insurer.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Acl.Insurer.Service\\InsuranceQuoter.Acl.Insurer.Service.csproj",
+        "projectName": "InsuranceQuoter.Acl.Insurer.Service",
+        "projectPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Acl.Insurer.Service\\InsuranceQuoter.Acl.Insurer.Service.csproj",
+        "packagesPath": "C:\\Users\\srogers\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Acl.Insurer.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\srogers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://hsdynuk-ip.pkgs.visualstudio.com/a454dce7-1d55-4d5f-9cfd-29e77c2bf12f/_packaging/AzureCloudServices-Infrastructure/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj": {
+                "projectPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj"
+              },
+              "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure\\InsuranceQuoter.Infrastructure.csproj": {
+                "projectPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure\\InsuranceQuoter.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.4.7, )"
+            },
+            "NServiceBus.Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "NServiceBus.Transport.AzureServiceBus": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "Topshelf": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.12, 5.0.12]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj",
+        "projectName": "InsuranceQuoter.Infrastructure.Message",
+        "projectPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj",
+        "packagesPath": "C:\\Users\\srogers\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\srogers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://hsdynuk-ip.pkgs.visualstudio.com/a454dce7-1d55-4d5f-9cfd-29e77c2bf12f/_packaging/AzureCloudServices-Infrastructure/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure\\InsuranceQuoter.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure\\InsuranceQuoter.Infrastructure.csproj",
+        "projectName": "InsuranceQuoter.Infrastructure",
+        "projectPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure\\InsuranceQuoter.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\srogers\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\srogers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://hsdynuk-ip.pkgs.visualstudio.com/a454dce7-1d55-4d5f-9cfd-29e77c2bf12f/_packaging/AzureCloudServices-Infrastructure/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj": {
+                "projectPath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.19.0, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.4.7, )"
+            },
+            "NServiceBus.Transport.AzureServiceBus": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

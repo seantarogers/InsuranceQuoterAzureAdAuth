@@ -1,0 +1,6 @@
+﻿2022-03-25 10:14:30.901 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-25 10:14:31.148 INFO  Selected active license from C:\Users\srogers\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2022-06-20
+2022-03-25 10:15:18.327 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-25 10:15:19.029 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-25 10:15:19.817 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.

@@ -1,0 +1,22 @@
+﻿2022-01-27 16:24:39.539 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-01-27 16:24:39.847 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-01-27 16:24:39.859 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:26:20.948 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-01-27 16:26:21.250 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-01-27 16:26:21.282 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:26:21.293 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:33:08.600 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-01-27 16:33:10.927 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-01-27 16:33:10.934 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:33:10.938 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:33:49.661 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-01-27 16:33:50.030 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-01-27 16:33:50.036 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:33:50.049 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:38:59.718 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-01-27 16:39:00.592 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-01-27 16:39:00.598 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:39:40.523 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.Insurer.Service\bin\Debug\net5.0\' with level Info
+2022-01-27 16:39:40.726 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-01-27 16:39:40.739 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-01-27 16:39:40.744 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows

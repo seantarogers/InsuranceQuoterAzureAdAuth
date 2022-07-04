@@ -1,0 +1,17 @@
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\Cosmos.CRTCompat.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\InsuranceQuoter.Infrastructure.deps.json
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\InsuranceQuoter.Infrastructure.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\ref\InsuranceQuoter.Infrastructure.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\InsuranceQuoter.Infrastructure.pdb
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\InsuranceQuoter.Infrastructure.Message.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\bin\Release\net5.0\InsuranceQuoter.Infrastructure.Message.pdb
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.csproj.AssemblyReference.cache
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.AssemblyInfoInputs.cache
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.AssemblyInfo.cs
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.csproj.CopyComplete
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\ref\InsuranceQuoter.Infrastructure.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure\obj\Release\net5.0\InsuranceQuoter.Infrastructure.pdb

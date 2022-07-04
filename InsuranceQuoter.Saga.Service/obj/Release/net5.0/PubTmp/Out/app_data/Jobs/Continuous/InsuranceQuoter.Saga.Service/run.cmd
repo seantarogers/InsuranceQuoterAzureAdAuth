@@ -1,0 +1,1 @@
+dotnet InsuranceQuoter.Saga.Service.dll %*

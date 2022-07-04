@@ -1,0 +1,11 @@
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\bin\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.deps.json
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\bin\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\bin\Debug\net5.0\ref\InsuranceQuoter.Infrastructure.Message.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\bin\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.pdb
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.AssemblyInfoInputs.cache
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.AssemblyInfo.cs
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.csproj.CoreCompileInputs.cache
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\ref\InsuranceQuoter.Infrastructure.Message.dll
+C:\Code\InsuranceQuoter\InsuranceQuoter.Infrastructure.Message\obj\Debug\net5.0\InsuranceQuoter.Infrastructure.Message.pdb

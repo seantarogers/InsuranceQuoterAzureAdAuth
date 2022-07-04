@@ -1,0 +1,346 @@
+﻿2021-12-13 11:47:47.659 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 11:47:47.778 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 11:59:26.570 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 11:59:26.749 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 11:59:38.052 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 11:59:38.257 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 12:00:34.262 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 12:00:34.415 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 12:02:44.715 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 12:02:44.841 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 12:04:37.127 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 12:04:37.282 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 12:08:21.622 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 12:08:21.792 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 14:11:33.811 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 14:11:34.020 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 14:12:19.216 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 14:12:19.383 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 14:12:57.234 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 14:12:57.432 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 14:15:14.725 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 14:15:14.856 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 14:17:05.859 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 14:17:06.017 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:09:34.521 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:09:34.637 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:09:56.072 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:09:56.226 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:14:56.563 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:14:56.712 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:15:31.855 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:15:32.003 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:16:28.992 INFO  Immediate Retry is going to retry message 'd677a215-70c3-438c-a3bf-adfd00fbb46e' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'f98fcb95-0cf5-5628-1f1a-0fdc7158c808' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: d677a215-70c3-438c-a3bf-adfd00fbb46e
+	Transport message ID: 300b6754-9741-4ebf-8bfe-94843df2e0c7
+2021-12-13 15:17:27.038 INFO  Immediate Retry is going to retry message '26706d26-643b-4285-85b5-adfd00fbebd3' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '751b6583-cce2-0c10-544a-56097e2064ba' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 26706d26-643b-4285-85b5-adfd00fbebd3
+	Transport message ID: 0a5dcb00-7caf-43dc-ba37-24d4e8669683
+2021-12-13 15:17:34.278 INFO  Immediate Retry is going to retry message 'd293e9ed-04bc-447d-85ef-adfd00fbf08a' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '751b6583-cce2-0c10-544a-56097e2064ba' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: d293e9ed-04bc-447d-85ef-adfd00fbf08a
+	Transport message ID: 65bee51a-ecbe-4cf6-b212-f1471f0c2feb
+2021-12-13 15:18:14.614 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:18:14.811 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:18:51.734 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:18:51.986 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:19:14.098 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:19:14.288 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:19:55.517 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:19:55.702 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:38:12.810 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:38:13.015 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:39:39.368 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:39:39.534 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:41:20.878 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:41:21.073 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:42:20.122 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:42:20.305 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:44:02.088 INFO  Immediate Retry is going to retry message '81841eec-94b1-4217-8455-adfd0103449a' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '8ffecae5-0b28-74f4-9057-bfba3fd827bf' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 81841eec-94b1-4217-8455-adfd0103449a
+	Transport message ID: 9ab513c1-7556-42ef-b307-43b756ec0385
+2021-12-13 15:44:11.344 INFO  Immediate Retry is going to retry message 'dbde3546-1fc3-4997-9b06-adfd010350c7' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '82cb5845-95a7-0508-fb38-83d46de99610' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 20
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 23
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: dbde3546-1fc3-4997-9b06-adfd010350c7
+	Transport message ID: f5da8901-0497-4e19-a36f-d72cddfbecb8
+2021-12-13 15:44:12.445 INFO  Immediate Retry is going to retry message 'dbde3546-1fc3-4997-9b06-adfd010350c7' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '82cb5845-95a7-0508-fb38-83d46de99610' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 20
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 23
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 50
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: dbde3546-1fc3-4997-9b06-adfd010350c7
+	Transport message ID: f5da8901-0497-4e19-a36f-d72cddfbecb8
+2021-12-13 15:44:14.707 INFO  Immediate Retry is going to retry message '2dbaf025-ef39-4429-942a-adfd01035441' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '82cb5845-95a7-0508-fb38-83d46de99610' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 20
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 23
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 50
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 2dbaf025-ef39-4429-942a-adfd01035441
+	Transport message ID: 786a70e1-0394-45ea-900d-f959c8768a6a
+2021-12-13 15:44:14.711 INFO  Immediate Retry is going to retry message '22ba4c6d-89e1-4b9a-86cd-adfd01035441' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '82cb5845-95a7-0508-fb38-83d46de99610' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 20
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 23
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 50
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 22ba4c6d-89e1-4b9a-86cd-adfd01035441
+	Transport message ID: 65d76631-b011-4534-a20a-df5bc8ffe413
+2021-12-13 15:44:15.542 INFO  Immediate Retry is going to retry message '2dbaf025-ef39-4429-942a-adfd01035441' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '82cb5845-95a7-0508-fb38-83d46de99610' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 20
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 23
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 32
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 50
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 2dbaf025-ef39-4429-942a-adfd01035441
+	Transport message ID: 786a70e1-0394-45ea-900d-f959c8768a6a
+2021-12-13 15:45:48.945 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:45:49.129 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:46:23.724 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:46:23.891 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:47:52.721 INFO  Immediate Retry is going to retry message 'b01b5601-9347-402b-b091-adfd010424c9' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '9479b443-d331-2d33-4fb6-b832a2f54318' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: b01b5601-9347-402b-b091-adfd010424c9
+	Transport message ID: b5258a08-6081-499e-afb4-7da6c50dbb73
+2021-12-13 15:47:52.721 INFO  Immediate Retry is going to retry message '81852c13-cbd3-491c-b2c8-adfd0104230c' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '9479b443-d331-2d33-4fb6-b832a2f54318' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 81852c13-cbd3-491c-b2c8-adfd0104230c
+	Transport message ID: a32397cd-b534-462d-982a-0a207687d140
+2021-12-13 15:48:29.829 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:48:29.985 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:49:07.070 INFO  Immediate Retry is going to retry message '70e9410c-6e81-44bd-b0ff-adfd0104ad92' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'fa8b1030-ec1d-cb3a-7cfb-6f2fafa18dd4' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 70e9410c-6e81-44bd-b0ff-adfd0104ad92
+	Transport message ID: 2a1ed65c-67c8-404c-a0a8-d735a174fe22
+2021-12-13 15:49:19.321 INFO  Immediate Retry is going to retry message '32a94562-6b04-4d6a-a286-adfd0104bcb2' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '47472ea5-5a6e-9362-22f3-708471a382c4' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 32a94562-6b04-4d6a-a286-adfd0104bcb2
+	Transport message ID: 73115c44-505d-488a-8979-07ef8b8a9f47
+2021-12-13 15:49:41.254 INFO  Immediate Retry is going to retry message '654c4b0e-f3af-4c5d-a652-adfd0104d41d' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '332f33b6-90d2-3985-1cd2-71766c2d4293' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 654c4b0e-f3af-4c5d-a652-adfd0104d41d
+	Transport message ID: 08cf941d-1b6e-4cdc-8b36-329170820470
+2021-12-13 15:49:43.835 INFO  Immediate Retry is going to retry message '654c4b0e-f3af-4c5d-a652-adfd0104d41d' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id '332f33b6-90d2-3985-1cd2-71766c2d4293' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 654c4b0e-f3af-4c5d-a652-adfd0104d41d
+	Transport message ID: 08cf941d-1b6e-4cdc-8b36-329170820470
+2021-12-13 15:50:40.786 INFO  Immediate Retry is going to retry message '003b49cb-f5c6-457c-a04e-adfd01051873' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'c87db8e2-c695-95ba-c28e-986c97cc46f7' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 61
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 003b49cb-f5c6-457c-a04e-adfd01051873
+	Transport message ID: 6d064edb-375c-4179-b2b5-0437ef7b1bd4
+2021-12-13 15:51:51.011 INFO  Immediate Retry is going to retry message '766b275d-01c6-46ea-97b7-adfd01051b9f' because of an exception:
+System.InvalidOperationException: Local transactions are not supported with other resource managers/DTC.
+   at Microsoft.Azure.ServiceBus.Core.MessageReceiver.DisposeMessagesAsync(IEnumerable`1 lockTokens, Outcome outcome)
+   at Microsoft.Azure.ServiceBus.RetryPolicy.RunOperation(Func`1 operation, TimeSpan operationTimeout)
+   at Microsoft.Azure.ServiceBus.RetryPolicy.RunOperation(Func`1 operation, TimeSpan operationTimeout)
+   at Microsoft.Azure.ServiceBus.Core.MessageReceiver.CompleteAsync(IEnumerable`1 lockTokens)
+   at NServiceBus.Transport.AzureServiceBus.MessageReceiverExtensions.SafeCompleteAsync(MessageReceiver messageReceiver, TransportTransactionMode transportTransactionMode, String lockToken, Transaction committableTransaction)
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+2021-12-13 15:52:37.966 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:52:38.127 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-13 15:54:52.414 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2021-12-13 15:54:52.606 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.

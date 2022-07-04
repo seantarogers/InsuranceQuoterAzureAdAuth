@@ -1,0 +1,21 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:43216",
+      "sslPort": 44364
+    }
+  },
+  "profiles": {
+    "InsuranceQuoter.Presentation.Hub1": {
+      "commandName": "Project",
+      "dotnetRunMessages": "false",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:9001",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

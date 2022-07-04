@@ -1,0 +1,21 @@
+﻿2021-12-07 14:54:14.046 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 16:39:29.727 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 16:39:29.830 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 16:52:39.495 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 16:52:39.681 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:45:52.347 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:45:52.495 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:46:19.911 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:46:20.086 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:48:13.923 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:48:14.048 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:51:30.377 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:51:30.557 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:51:48.999 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:51:49.159 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:53:35.580 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:53:35.712 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:55:02.389 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:55:02.575 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-07 17:55:40.976 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-07 17:55:41.312 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.

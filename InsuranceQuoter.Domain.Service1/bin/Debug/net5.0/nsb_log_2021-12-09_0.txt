@@ -1,0 +1,50 @@
+﻿2021-12-09 11:50:46.199 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:50:46.497 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 11:54:10.896 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:54:11.041 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 11:58:29.964 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:58:30.235 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:45:30.269 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:45:30.561 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:47:59.866 INFO  Immediate Retry is going to retry message 'eb9cf39d-46d5-4641-957d-adf900f3cf41' because of an exception:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InsuranceQuoter.Domain.Service.MessageHandlers.AddPolicyCommandHandler.Handle(AddPolicyCommand message, IMessageHandlerContext context) in C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\MessageHandlers\AddPolicyCommandHandler.cs:line 31
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 22
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message type: InsuranceQuoter.Infrastructure.Message.Commands.AddPolicyCommand
+	Handler type: InsuranceQuoter.Domain.Service.MessageHandlers.AddPolicyCommandHandler
+	Handler start time: 2021-12-09 14:47:41:234151 Z
+	Handler failure time: 2021-12-09 14:47:59:862960 Z
+	Message ID: eb9cf39d-46d5-4641-957d-adf900f3cf41
+	Transport message ID: 0fb04f7b-bd00-46b4-8502-ea98582b6324
+2021-12-09 14:48:21.359 INFO  Immediate Retry is going to retry message 'eb9cf39d-46d5-4641-957d-adf900f3cf41' because of an exception:
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InsuranceQuoter.Domain.Service.MessageHandlers.AddPolicyCommandHandler.Handle(AddPolicyCommand message, IMessageHandlerContext context) in C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\MessageHandlers\AddPolicyCommandHandler.cs:line 31
+   at NServiceBus.InvokeHandlerTerminator.Terminate(IInvokeHandlerContext context) in /_/src/NServiceBus.Core/Pipeline/Incoming/InvokeHandlerTerminator.cs:line 22
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message type: InsuranceQuoter.Infrastructure.Message.Commands.AddPolicyCommand
+	Handler type: InsuranceQuoter.Domain.Service.MessageHandlers.AddPolicyCommandHandler
+	Handler start time: 2021-12-09 14:48:00:171438 Z
+	Handler failure time: 2021-12-09 14:48:21:358547 Z
+	Message ID: eb9cf39d-46d5-4641-957d-adf900f3cf41
+	Transport message ID: 0fb04f7b-bd00-46b4-8502-ea98582b6324
+2021-12-09 14:49:10.501 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:49:10.719 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:53:12.483 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:53:12.844 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:55:44.191 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Domain.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:55:44.410 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.

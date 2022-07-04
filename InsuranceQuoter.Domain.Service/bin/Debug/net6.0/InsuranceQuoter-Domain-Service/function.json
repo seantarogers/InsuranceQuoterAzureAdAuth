@@ -1,0 +1,16 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.0.1",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "autoCompleteMessages": false,
+      "queueName": "InsuranceQuoter.Domain.Service",
+      "isSessionsEnabled": false,
+      "name": "message"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/InsuranceQuoter.Domain.Service.dll",
+  "entryPoint": "FunctionEndpointTrigger.Run"
+}

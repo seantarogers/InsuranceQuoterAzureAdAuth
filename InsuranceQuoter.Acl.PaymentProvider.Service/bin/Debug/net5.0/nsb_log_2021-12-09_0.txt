@@ -1,0 +1,14 @@
+﻿2021-12-09 11:50:45.578 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:50:45.710 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 11:54:10.867 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:54:11.008 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 11:58:28.685 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 11:58:28.873 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:45:28.291 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:45:28.754 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:49:10.346 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:49:10.552 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:53:11.823 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:53:11.974 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2021-12-09 14:55:43.661 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Acl.PaymentProvider.Service\bin\Debug\net5.0\' with level Info
+2021-12-09 14:55:44.004 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.

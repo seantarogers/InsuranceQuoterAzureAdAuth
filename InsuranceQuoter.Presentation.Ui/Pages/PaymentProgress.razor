@@ -1,0 +1,41 @@
+﻿@page "/paymentprogress"
+@using Microsoft.AspNetCore.Authorization
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+@attribute [Authorize]
+
+@if (PolicyBound == false)
+{
+    <h1 class="page-title">Please wait whilst we place your car on cover...</h1>
+
+    <div class="form-group">
+        <ul class="list-group">
+
+            @foreach (string state in States)
+            {
+                <li class="list-group-item">@state</li>
+            }
+        </ul>
+    </div>
+
+    <div class="form-group">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" style="width: @StatesPercentage" role="progressbar" aria-valuenow="@StatesCompleted" aria-valuemin="0" aria-valuemax="5"></div>
+        </div>
+    </div>
+}
+else
+{
+    <div>
+        <div class="card">
+            <div class="card-header"><strong>Your car is now on cover!</strong></div>
+            <div class="card-body">
+
+                <p class="card-text"><strong>Insurer</strong>: @InsurerName</p>
+                <p class="card-text"><strong>Policy Reference</strong>: @PolicyUid</p>
+                <p class="card-text"><strong>Cover Type</strong>: @CoverType</p>
+                <p class="card-text"><strong>Car Registration</strong>: @Registration</p>
+            </div>
+        </div>
+    </div>
+}

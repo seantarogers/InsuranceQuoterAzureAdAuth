@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nmA+/flyL3Gwjy2PK2JgSRhnjRBOAbjPjcv3BHyNrcCy6vbbhi5UgI7JMzVb4pzhh8ePyZi4FXZRBfq3un/oIg==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\InsuranceQuoter\\InsuranceQuoter.Infrastructure.Message\\InsuranceQuoter.Infrastructure.Message.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\srogers\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,615 @@
+﻿2022-03-18 10:14:11.900 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:14:12.056 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:14:12.059 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:15:16.995 ERROR Your license has expired
+2022-03-18 10:15:16.995 ERROR Your license has expired
+2022-03-18 10:15:17.382 ERROR Your license has expired
+2022-03-18 10:15:17.683 INFO  Immediate Retry is going to retry message '576ba97f-e83b-4876-9778-ae5c00a8fb73' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'c392f944-1750-eca5-9219-4d36275da088' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 576ba97f-e83b-4876-9778-ae5c00a8fb73
+	Transport message ID: c4ab0c81-413c-4757-90e0-9a4368fa72bc
+2022-03-18 10:15:17.683 INFO  Immediate Retry is going to retry message '3896edf3-dc5d-4183-b30e-ae5c00a8fa88' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'c392f944-1750-eca5-9219-4d36275da088' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 3896edf3-dc5d-4183-b30e-ae5c00a8fa88
+	Transport message ID: a9a2509e-4468-4f6b-8272-59554d56a070
+2022-03-18 10:15:17.785 ERROR Your license has expired
+2022-03-18 10:15:18.099 ERROR Your license has expired
+2022-03-18 10:15:28.307 ERROR Your license has expired
+2022-03-18 10:15:29.488 ERROR Your license has expired
+2022-03-18 10:15:31.313 ERROR Your license has expired
+2022-03-18 10:15:32.198 ERROR Your license has expired
+2022-03-18 10:16:25.229 ERROR Your license has expired
+2022-03-18 10:16:25.229 ERROR Your license has expired
+2022-03-18 10:16:25.304 INFO  Immediate Retry is going to retry message '7c1da12b-619f-4232-a0ac-ae5c00a94d31' because of an exception:
+System.Exception: The 'QuoteSagaData' saga with id 'd555833e-0ed0-cdcb-53e5-389babf26ebb' was updated by another process or no longer exists.
+   at NServiceBus.Persistence.CosmosDB.SagaUpdate.Conflict(TransactionalBatchOperationResult result) in /_/src/NServiceBus.Persistence.CosmosDB/Saga/SagaOperations.cs:line 75
+   at NServiceBus.Persistence.CosmosDB.TransactionalBatchExtensions.ExecuteOperationsAsync(TransactionalBatch transactionalBatch, Dictionary`2 operationMappings, PartitionKeyPath partitionKeyPath) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/TransactionalBatchExtensions.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.StorageSession.Commit() in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/StorageSession.cs:line 64
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 57
+   at NServiceBus.Persistence.CosmosDB.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Persistence.CosmosDB/SynchronizedStorage/CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Exception details:
+	Message ID: 7c1da12b-619f-4232-a0ac-ae5c00a94d31
+	Transport message ID: 57a6325b-6a86-4ef7-8d42-9b29f1da9785
+2022-03-18 10:16:25.573 ERROR Your license has expired
+2022-03-18 10:16:26.251 ERROR Your license has expired
+2022-03-18 10:16:34.517 ERROR Your license has expired
+2022-03-18 10:16:35.007 ERROR Your license has expired
+2022-03-18 10:16:35.870 ERROR Your license has expired
+2022-03-18 10:16:36.449 ERROR Your license has expired
+2022-03-18 10:36:36.094 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:36:36.259 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:36:36.262 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:36:36.264 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:36:41.453 INFO  The version of AzureTablePersistence uses the migration mode and will fallback to lookup correlated sagas based on the secondary index if necessary.
+2022-03-18 10:37:09.232 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:37:09.456 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:37:09.461 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:37:09.464 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:37:14.694 INFO  The version of AzureTablePersistence uses the migration mode and will fallback to lookup correlated sagas based on the secondary index if necessary.
+2022-03-18 10:38:43.599 ERROR Your license has expired
+2022-03-18 10:38:44.062 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Events.RiskAddedEvent' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:38:44.845 ERROR Your license has expired
+2022-03-18 10:38:44.886 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:38:45.646 ERROR Your license has expired
+2022-03-18 10:38:45.676 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:42:15.322 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:42:15.552 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:42:15.555 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:42:20.596 INFO  The version of AzureTablePersistence uses the migration mode and will fallback to lookup correlated sagas based on the secondary index if necessary.
+2022-03-18 10:44:57.750 ERROR Your license has expired
+2022-03-18 10:44:58.216 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Events.RiskAddedEvent' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:44:58.259 ERROR Your license has expired
+2022-03-18 10:44:58.302 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:44:58.971 ERROR Your license has expired
+2022-03-18 10:44:58.998 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:44:59.592 ERROR Your license has expired
+2022-03-18 10:44:59.617 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:47:54.444 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:47:54.638 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:47:54.641 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:47:59.689 INFO  The version of AzureTablePersistence uses the migration mode and will fallback to lookup correlated sagas based on the secondary index if necessary.
+2022-03-18 10:48:27.181 ERROR Your license has expired
+2022-03-18 10:48:27.620 INFO  Immediate Retry is going to retry message 'a93df9d7-e121-4c4f-9a75-ae5c00b21986' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](String propertyName, Object propertyValue, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 112
+   at NServiceBus.PropertySagaFinder`1.Find(IBuilder builder, SagaFinderDefinition finderDefinition, SynchronizedStorageSession storageSession, ContextBag context, Object message, IReadOnlyDictionary`2 messageHeaders) in /_/src/NServiceBus.Core/Sagas/PropertySagaFinder.cs:line 42
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582d2f-4002-0063-15b5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:27 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582d2f-4002-0063-15b5-3ac2f6000000
+Time:2022-03-18T10:48:27.0491296Z
+
+Exception details:
+	Message ID: a93df9d7-e121-4c4f-9a75-ae5c00b21986
+	Transport message ID: bda5e30e-0f7d-4f3a-8ffb-9aa9894ca256
+2022-03-18 10:48:27.879 ERROR Your license has expired
+2022-03-18 10:48:27.880 ERROR Your license has expired
+2022-03-18 10:48:27.929 INFO  Immediate Retry is going to retry message '02002062-7a55-41b4-97fa-ae5c00b21a6e' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582d54-4002-0063-38b5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:27 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582d54-4002-0063-38b5-3ac2f6000000
+Time:2022-03-18T10:48:27.4209174Z
+
+Exception details:
+	Message ID: 02002062-7a55-41b4-97fa-ae5c00b21a6e
+	Transport message ID: c10261a3-81ea-4be6-aaee-33a86e4df32a
+2022-03-18 10:48:28.010 ERROR Your license has expired
+2022-03-18 10:48:28.041 INFO  Immediate Retry is going to retry message '99b9326c-e53a-48f7-8fc7-ae5c00b21aa4' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:60c81745-5002-000d-72b5-3a97d9000000
+RequestDate:Fri, 18 Mar 2022 10:48:28 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:60c81745-5002-000d-72b5-3a97d9000000
+Time:2022-03-18T10:48:27.5319773Z
+
+Exception details:
+	Message ID: 99b9326c-e53a-48f7-8fc7-ae5c00b21aa4
+	Transport message ID: a34be307-46ca-4445-a00a-83f82575b5e3
+2022-03-18 10:48:28.041 INFO  Immediate Retry is going to retry message '02002062-7a55-41b4-97fa-ae5c00b21a6e' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582d5d-4002-0063-40b5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:28 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582d5d-4002-0063-40b5-3ac2f6000000
+Time:2022-03-18T10:48:27.5338509Z
+
+Exception details:
+	Message ID: 02002062-7a55-41b4-97fa-ae5c00b21a6e
+	Transport message ID: c10261a3-81ea-4be6-aaee-33a86e4df32a
+2022-03-18 10:48:28.122 ERROR Your license has expired
+2022-03-18 10:48:28.151 INFO  Immediate Retry is going to retry message '99b9326c-e53a-48f7-8fc7-ae5c00b21aa4' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582d69-4002-0063-4cb5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:28 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582d69-4002-0063-4cb5-3ac2f6000000
+Time:2022-03-18T10:48:27.6457859Z
+
+Exception details:
+	Message ID: 99b9326c-e53a-48f7-8fc7-ae5c00b21aa4
+	Transport message ID: a34be307-46ca-4445-a00a-83f82575b5e3
+2022-03-18 10:48:28.631 ERROR Your license has expired
+2022-03-18 10:48:28.660 INFO  Immediate Retry is going to retry message 'a9d8a52e-58e5-4f3d-89be-ae5c00b21b36' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582d96-4002-0063-75b5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:28 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582d96-4002-0063-75b5-3ac2f6000000
+Time:2022-03-18T10:48:28.1534955Z
+
+Exception details:
+	Message ID: a9d8a52e-58e5-4f3d-89be-ae5c00b21b36
+	Transport message ID: 916ba69e-ce8d-4cf7-971a-7ce167335a2c
+2022-03-18 10:48:28.747 ERROR Your license has expired
+2022-03-18 10:48:28.774 INFO  Immediate Retry is going to retry message 'a9d8a52e-58e5-4f3d-89be-ae5c00b21b36' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582d9e-4002-0063-7db5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:28 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582d9e-4002-0063-7db5-3ac2f6000000
+Time:2022-03-18T10:48:28.2684293Z
+
+Exception details:
+	Message ID: a9d8a52e-58e5-4f3d-89be-ae5c00b21b36
+	Transport message ID: 916ba69e-ce8d-4cf7-971a-7ce167335a2c
+2022-03-18 10:48:28.839 ERROR Your license has expired
+2022-03-18 10:48:28.869 INFO  Immediate Retry is going to retry message 'a9d8a52e-58e5-4f3d-89be-ae5c00b21b36' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582da0-4002-0063-7fb5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:28 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582da0-4002-0063-7fb5-3ac2f6000000
+Time:2022-03-18T10:48:28.3633743Z
+
+Exception details:
+	Message ID: a9d8a52e-58e5-4f3d-89be-ae5c00b21b36
+	Transport message ID: 916ba69e-ce8d-4cf7-971a-7ce167335a2c
+2022-03-18 10:48:29.190 ERROR Your license has expired
+2022-03-18 10:48:29.220 INFO  Immediate Retry is going to retry message '45b29f4e-9a2d-497f-b8a2-ae5c00b21bf6' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:8b582dba-4002-0063-19b5-3ac2f6000000
+RequestDate:Fri, 18 Mar 2022 10:48:29 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:8b582dba-4002-0063-19b5-3ac2f6000000
+Time:2022-03-18T10:48:28.7121751Z
+
+Exception details:
+	Message ID: 45b29f4e-9a2d-497f-b8a2-ae5c00b21bf6
+	Transport message ID: 45ed3419-afec-4cae-af06-93ca8edd606f
+2022-03-18 10:55:25.333 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:55:25.572 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:55:25.576 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:55:30.612 INFO  The version of AzureTablePersistence uses the migration mode and will fallback to lookup correlated sagas based on the secondary index if necessary.
+2022-03-18 10:56:03.758 ERROR Your license has expired
+2022-03-18 10:56:04.189 INFO  Immediate Retry is going to retry message 'e534b181-1c03-4277-8533-ae5c00b43092' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](String propertyName, Object propertyValue, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 112
+   at NServiceBus.PropertySagaFinder`1.Find(IBuilder builder, SagaFinderDefinition finderDefinition, SynchronizedStorageSession storageSession, ContextBag context, Object message, IReadOnlyDictionary`2 messageHeaders) in /_/src/NServiceBus.Core/Sagas/PropertySagaFinder.cs:line 42
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:9a56be37-e002-006a-0db6-3a8725000000
+RequestDate:Fri, 18 Mar 2022 10:56:04 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:9a56be37-e002-006a-0db6-3a8725000000
+Time:2022-03-18T10:56:03.6320005Z
+
+Exception details:
+	Message ID: e534b181-1c03-4277-8533-ae5c00b43092
+	Transport message ID: 94b818fd-a8dc-426a-b6f2-f81189d5feaf
+2022-03-18 10:56:05.093 ERROR Your license has expired
+2022-03-18 10:56:05.101 ERROR Your license has expired
+2022-03-18 10:56:05.150 INFO  Immediate Retry is going to retry message 'c564fd33-8bf8-4f1f-aa9e-ae5c00b43158' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:9a56be90-e002-006a-61b6-3a8725000000
+RequestDate:Fri, 18 Mar 2022 10:56:05 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:9a56be90-e002-006a-61b6-3a8725000000
+Time:2022-03-18T10:56:04.6444165Z
+
+Exception details:
+	Message ID: c564fd33-8bf8-4f1f-aa9e-ae5c00b43158
+	Transport message ID: 8ce750f0-aaf8-402a-94d3-6018377fd170
+2022-03-18 10:56:05.249 INFO  Immediate Retry is going to retry message 'fa50aa41-77c9-49b0-b971-ae5c00b43239' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:4380f374-e002-008e-0bb6-3a89bb000000
+RequestDate:Fri, 18 Mar 2022 10:56:05 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:4380f374-e002-008e-0bb6-3a89bb000000
+Time:2022-03-18T10:56:04.7436552Z
+
+Exception details:
+	Message ID: fa50aa41-77c9-49b0-b971-ae5c00b43239
+	Transport message ID: 31b1bfa6-ef88-463a-be1d-2b17ab87ab36
+2022-03-18 10:56:05.391 ERROR Your license has expired
+2022-03-18 10:56:05.422 INFO  Immediate Retry is going to retry message 'fa50aa41-77c9-49b0-b971-ae5c00b43239' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:4380f383-e002-008e-17b6-3a89bb000000
+RequestDate:Fri, 18 Mar 2022 10:56:05 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:4380f383-e002-008e-17b6-3a89bb000000
+Time:2022-03-18T10:56:04.9125584Z
+
+Exception details:
+	Message ID: fa50aa41-77c9-49b0-b971-ae5c00b43239
+	Transport message ID: 31b1bfa6-ef88-463a-be1d-2b17ab87ab36
+2022-03-18 10:56:05.788 ERROR Your license has expired
+2022-03-18 10:56:05.843 INFO  Immediate Retry is going to retry message '820b724e-953f-4718-8ed8-ae5c00b4323f' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:4380f38f-e002-008e-22b6-3a89bb000000
+RequestDate:Fri, 18 Mar 2022 10:56:05 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:4380f38f-e002-008e-22b6-3a89bb000000
+Time:2022-03-18T10:56:05.3273219Z
+
+Exception details:
+	Message ID: 820b724e-953f-4718-8ed8-ae5c00b4323f
+	Transport message ID: 60e483ba-c852-4fc4-8682-ad5316984948
+2022-03-18 10:56:06.178 ERROR Your license has expired
+2022-03-18 10:56:06.210 INFO  Immediate Retry is going to retry message '8f60affd-1e4d-47a7-a3b5-ae5c00b43396' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:4380f398-e002-008e-29b6-3a89bb000000
+RequestDate:Fri, 18 Mar 2022 10:56:06 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:4380f398-e002-008e-29b6-3a89bb000000
+Time:2022-03-18T10:56:05.7061058Z
+
+Exception details:
+	Message ID: 8f60affd-1e4d-47a7-a3b5-ae5c00b43396
+	Transport message ID: 079f43fe-662b-4caf-bcb7-6a326039b906
+2022-03-18 10:56:07.299 ERROR Your license has expired
+2022-03-18 10:56:14.621 INFO  Immediate Retry is going to retry message '8668929f-25ac-487a-8d37-ae5c00b434e4' because of an exception:
+Microsoft.Azure.Cosmos.Table.StorageException: The remote server returned an error: (400) Bad Request.
+   at Microsoft.Azure.Cosmos.Table.RestExecutor.TableCommand.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken callerCancellationToken)
+   at Microsoft.Azure.Cosmos.Table.CloudTable.CreateIfNotExistsAsync(TableRequestOptions requestOptions, OperationContext operationContext, String serializedIndexingPolicy, Nullable`1 throughput, Nullable`1 defaultTimeToLive, CancellationToken cancellationToken)
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.GetTableAndCreateIfNotExists(StorageSession storageSession, Type sagaDataType) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 175
+   at NServiceBus.Persistence.AzureTable.AzureSagaPersister.Get[TSagaData](Guid sagaId, SynchronizedStorageSession session, ContextBag context) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SagaPersisters\AzureSagaPersister.cs:line 80
+   at NServiceBus.LoadSagaByIdWrapper`1.Load(ISagaPersister persister, String sagaId, SynchronizedStorageSession storageSession, ContextBag context) in /_/src/NServiceBus.Core/Sagas/LoadSagaByIdWrapper.cs:line 15
+   at NServiceBus.SagaPersistenceBehavior.Invoke(IInvokeHandlerContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/SagaPersistenceBehavior.cs:line 78
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 48
+   at NServiceBus.Persistence.AzureTable.CurrentSharedTransactionalBatchBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in C:\BuildAgent\work\372ae7b8cd87483b\src\NServiceBus.Persistence.AzureTable\SynchronizedStorage\CurrentSharedTransactionalBatchBehavior.cs:line 18
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.InvokeSagaNotFoundBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Sagas/InvokeSagaNotFoundBehavior.cs:line 16
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 33
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.Transport.AzureServiceBus.MessagePump.InnerProcessMessage(Task`1 receiveTask)
+Request Information
+RequestID:4380f50b-e002-008e-6ab6-3a89bb000000
+RequestDate:Fri, 18 Mar 2022 10:56:14 GMT
+StatusMessage:The remote server returned an error: (400) Bad Request.
+ErrorCode:
+ErrorMessage:The values are not specified for all properties in the entity.
+RequestId:4380f50b-e002-008e-6ab6-3a89bb000000
+Time:2022-03-18T10:56:14.1123128Z
+
+Exception details:
+	Message ID: 8668929f-25ac-487a-8d37-ae5c00b434e4
+	Transport message ID: bb3927f3-d936-4f27-a847-16fc5af0c774
+2022-03-18 10:58:43.171 INFO  Logging to 'C:\Code\InsuranceQuoter\InsuranceQuoter.Saga.Service\bin\Debug\net5.0\' with level Info
+2022-03-18 10:58:43.342 INFO  No valid license could be found. Falling back to trial license with start date '2021-12-07'.
+2022-03-18 10:58:43.345 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.4.7&t=0&p=windows
+2022-03-18 10:58:48.392 INFO  The version of AzureTablePersistence uses the migration mode and will fallback to lookup correlated sagas based on the secondary index if necessary.
+2022-03-18 10:59:15.459 ERROR Your license has expired
+2022-03-18 10:59:15.891 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:59:15.969 ERROR Your license has expired
+2022-03-18 10:59:16.004 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.
+2022-03-18 10:59:16.901 ERROR Your license has expired
+2022-03-18 10:59:16.927 INFO  Could not find a started saga for 'InsuranceQuoter.Infrastructure.Message.Responses.QuoteResponse' message type. Going to invoke SagaNotFoundHandlers.

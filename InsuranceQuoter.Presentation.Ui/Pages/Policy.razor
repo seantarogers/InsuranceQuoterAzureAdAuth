@@ -1,0 +1,64 @@
+﻿@page "/policies"
+@using Microsoft.AspNetCore.Authorization
+@using InsuranceQuoter.Presentation.Ui.Models
+@inherits Fluxor.Blazor.Web.Components.FluxorComponent
+
+@attribute [Authorize]
+
+<h1 class="page-title">Your Purchased Policies:</h1>
+
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th scope="col">
+            Driver Name
+            <i @onclick="SortByDriverNameAscending" class="bi bi-sort-up pointer"></i>
+            <i @onclick="SortByDriverNameDescending" class="bi bi-sort-down pointer"></i>
+        </th>
+        <th scope="col">Registration Number</th>
+        <th scope="col">
+            Policy Reference
+        </th>
+        <th scope="col">Insurer
+            <i @onclick="SortByInsurerAscending" class="bi bi-sort-up pointer"></i>
+            <i @onclick="SortByInsurerDescending" class="bi bi-sort-down pointer"></i>
+        </th>
+        <th scope="col">Expires On</th>
+        <th scope="col">Cover Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (Policies == null || !Policies.Any() && PoliciesRetrieving)
+    {
+        <tr>
+            <td colspan="6">
+                <div class="spinner-border" role="status">
+                </div>
+                <span>Loading purchased policies...</span>
+            </td>
+        </tr>
+    }
+    else if (Policies == null || !Policies.Any() && !PoliciesRetrieving)
+    {
+        <tr>
+            <td colspan="6">
+                You haven't purchased any policies yet.
+            </td>
+        </tr>
+    }
+    else
+    {
+        @foreach (PolicyModel policy in Policies)
+        {
+            <tr>
+                <td>@policy.DriverName</td>
+                <td>@policy.Registration</td>
+                <td>@policy.PolicyUid</td>
+                <td>@policy.Insurer</td>
+                <td>@policy.ExpiresOn</td>
+                <td>@policy.CoverType</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
